@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: tkinter-files-folders
+Version: 0.11
+Summary: Some tkinter functions for selecting files/folders
+Home-page: https://github.com/hansalemaos/tkinter_files_folders
+Author: Johannes Fischer
+Author-email: aulasparticularesdealemaosp@gmail.com
+License: MIT
+Keywords: tkinter,files,folders
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+
+
+# Some tkinter functions for selecting files/folders 
+
+```python
+# Tested with:
+# Python 3.9.13
+# Windows 10
+
+pip install tkinter-files-folders
+
+from tkinter_files_folders import (
+    get_multiple_files_with_tkinter,
+    get_file_with_tkinter,
+    get_save_file_with_tkinter,
+    get_existing_directory_with_tkinter,
+    get_not_existing_directory_with_tkinter,
+)
+get_multiple_files_with_tkinter(filetypes=((".txt", "*.txt"), (".png", "*.png")))
+get_file_with_tkinter(filetypes=((".txt", "*.txt"), (".png", "*.png")))
+get_save_file_with_tkinter(filetypes=((".txt", "*.txt"), (".png", "*.png")))
+get_existing_directory_with_tkinter()
+get_not_existing_directory_with_tkinter()
+
+```
+
+
+
